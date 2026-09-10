@@ -1,0 +1,124 @@
+:root {
+    color-scheme: light dark;
+    --font-main: "Shantell Sans";
+    --accent-color: #613F75;
+    --detail-color: #FCFC62;
+    --border-radius: 16px;
+    --shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    --padding: 8px;
+    --item-padding: 4px;
+    --main-padding-mobile: 5vw;
+    --main-padding-tablet: 10vw;
+    --main-padding-desktop: 20vw;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: var(--font-main), serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    height: 54px;
+    background: var(--accent-color);
+}
+
+.header-dropdown__container {
+    height: -webkit-fill-available;
+    height: -moz-available;
+}
+
+#header-dropdown__toggle {
+    display: none;
+}
+
+.header-dropdown__hamburger {
+    width: 35px;
+    height: 35px;
+    color: var(--detail-color);
+    cursor: pointer;
+    align-self: end;
+    margin: 10px;
+}
+
+#dropdown-menu {
+    transition: transform 0.5s;
+    transform-origin: top;
+    position: absolute;
+    top: 7vh;
+    right: 4vh;
+    box-shadow: var(--shadow);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background: var(--accent-color);
+}
+
+section {
+    max-width: 100vw;
+}
+
+.form-group input {
+    max-width: var(--main-padding-mobile);
+    min-width: 30vw;
+}
+
+input:not(:checked) ~ #dropdown-menu {
+    transform: scaleY(0);
+}
+
+.header-dropdown__wrapper {
+    list-style-type: none;
+}
+
+.header-dropdown__item {
+    padding: var(--item-padding);
+}
+
+.header-dropdown__item a {
+    color: var(--detail-color);
+}
+
+.header-dropdown__item a:visited ~ #dropdown-menu {
+    transform: scaleY(0);
+}
+
+main {
+    padding: 0 var(--main-padding-mobile);
+    text-align: center;
+}
+
+@media (min-width: 374px) {
+
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 0 var(--main-padding-tablet);
+    }
+    .form-group input {
+        max-width: var(--main-padding-tablet);
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding: 0 var(--main-padding-desktop);
+    }
+    .form-group input {
+        max-width: var(--main-padding-desktop);
+    }
+}
+
+@media (min-width: 1440px) {
+
+}
+
+@media (min-width: 1920px) {
+
+}

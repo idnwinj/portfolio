@@ -5,42 +5,89 @@
     <title>Портфоліо</title>
 
     <meta name="description" content="Особисте портфоліо Ані — освіта, навички, хобі, улюблені книги, музика та цілі.">
-
-    <link rel="icon" href="img/icon.png">
-
     <meta property="og:title" content="Портфоліо Ані">
     <meta property="og:description" content="Моє особисте портфоліо: освіта, навички, хобі та захоплення.">
     <meta property="og:image" content="img/preview.jpg">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <body>
 
 <header>
-    <nav>
-        <a href="#about-me">Про мене</a>
-        <a href="#school">Школа</a>
-        <a href="#university">Університет</a>
-        <a href="#favorite subjects">Улюблені предмети</a>
-        <a href="#skills">Навички</a>
-        <a href="#hobbies">Хобі</a>
-        <a href="#books">Книги</a>
-        <a href="#music">Музика</a>
-        <a href="#films">Фільми</a>
-        <a href="#activities">Активності</a>
-        <a href="#my city">Моє місто</a>
-        <a href="#goals">Цілі на найближчий рік</a>
-        <a href="#fun-facts">Цікаві факти</a>
-        <a href="#quotes">Цитати</a>
-        <a href="#schedule">Розклад</a>
-        <a href="#contacts">Контакти</a>
-        <a href="#footer">Додаткова інформація</a>
+    <nav class="header__container">
+        AAAAA
+        <div class="header-dropdown__container">
+            <input id="header-dropdown__toggle" type="checkbox">
+            <label id="header-dropdown__label" for="header-dropdown__toggle">
+                <svg class="header-dropdown__hamburger" width="800px" height="800px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 12.32H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 18.32H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 6.32001H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+            <ul class="header-dropdown__wrapper" id="dropdown-menu">
+                <li class="header-dropdown__item">
+                    <a href="#about">Про мене</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#school">Школа</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#university">Університет</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#favorite subjects">Улюблені предмети</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#skills">Навички</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#hobbies">Хобі</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#books">Книги</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#music">Музика</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#films">Фільми</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#activities">Активності</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#my city">Моє місто</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#goals">Цілі на найближчий рік</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#fun-facts">Цікаві факти</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#quotes">Цитати</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#schedule">Розклад</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#contacts">Контакти</a>
+                </li>
+                <li class="header-dropdown__item">
+                    <a href="#footer">Додаткова інформація</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 <main>
-    <h1>Моє особисте портфоліо</h1>
+    <h1>Моє портфоліо </h1>
     <section class="about-me" id="about">
         <h2 class="about-me__title">Про мене</h2>
         <h3 class="about-me__name">Аня</h3>
@@ -519,8 +566,7 @@
         <p class="footer__copyright">&copy; Всі права захищені.</p>
 
         <ul class="footer__socials">
-
-
+            </ul>
     </div>
 </footer>
 
